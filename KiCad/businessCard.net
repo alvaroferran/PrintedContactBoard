@@ -1,0 +1,82 @@
+(export (version D)
+  (design
+    (source /home/alvaro/Frikeo/BusinessCard/businessCard.sch)
+    (date "Tue 26 Sep 2017 14:33:14 CEST")
+    (tool "Eeschema no-vcs-found-e46fdb0~60~ubuntu16.04.1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source businessCard.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref U1)
+      (value NTAG216F)
+      (footprint "alvaroferran:SOT1312AB2(HXSON4)")
+      (libsource (lib alvaroferran) (part NTAG216F))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 59C4CBDF))
+    (comp (ref RF1)
+      (value antennaNFC)
+      (footprint alvaroferran:antennaNFC_26x26mm)
+      (libsource (lib alvaroferran) (part antennaNFC))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 59C4CEFC))
+    (comp (ref P1)
+      (value PAD)
+      (footprint alvaroferran:PAD)
+      (libsource (lib alvaroferran) (part PAD))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 59CA37C7)))
+  (libparts
+    (libpart (lib alvaroferran) (part NTAG216F)
+      (description "NFC Tag 888 bytes 2x1x0.5mm")
+      (footprints
+        (fp "alvaroferran:SOT1312AB2(HXSON4)"))
+      (fields
+        (field (name Reference) U)
+        (field (name Value) NTAG216F))
+      (pins
+        (pin (num 1) (name GND) (type passive))
+        (pin (num 2) (name LB) (type passive))
+        (pin (num 3) (name FD) (type passive))
+        (pin (num 4) (name LA) (type passive))))
+    (libpart (lib alvaroferran) (part PAD)
+      (footprints
+        (fp alvaroferran:PAD))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) PAD))
+      (pins
+        (pin (num 1) (name P) (type passive))))
+    (libpart (lib alvaroferran) (part antennaNFC)
+      (description "NFC Antenna 26x26mm")
+      (footprints
+        (fp alvaroferran:antennaNFC_26x26mm))
+      (fields
+        (field (name Reference) RF)
+        (field (name Value) antennaNFC))
+      (pins
+        (pin (num 1) (name LA) (type passive))
+        (pin (num 2) (name LB) (type passive)))))
+  (libraries
+    (library (logical alvaroferran)
+      (uri /home/alvaro/Programas/Kicad/alvaroferranLibrary/alvaroferran.lib)))
+  (nets
+    (net (code 1) (name GND)
+      (node (ref P1) (pin 1)))
+    (net (code 2) (name "Net-(RF1-Pad2)")
+      (node (ref RF1) (pin 2))
+      (node (ref U1) (pin 2)))
+    (net (code 3) (name "Net-(RF1-Pad1)")
+      (node (ref RF1) (pin 1))
+      (node (ref U1) (pin 4)))
+    (net (code 4) (name "Net-(U1-Pad1)")
+      (node (ref U1) (pin 1)))
+    (net (code 5) (name "Net-(U1-Pad3)")
+      (node (ref U1) (pin 3)))))

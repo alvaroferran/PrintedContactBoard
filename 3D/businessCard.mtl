@@ -1,0 +1,56 @@
+# Blender MTL File: 'businessCard.blend'
+# Material Count: 5
+
+newmtl Back
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/alvaro/Frikeo/BusinessCard/Silkscreen/Silkscreen2-Back.png
+
+newmtl Back_NONE
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/alvaro/Frikeo/BusinessCard/Silkscreen/Silkscreen2-Back.png
+
+newmtl Front
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/alvaro/Frikeo/BusinessCard/Silkscreen/Silkscreen1-Front.png
+
+newmtl Material.001
+Ns 96.078431
+Ka 0.887097 0.887097 0.887097
+Kd 0.001517 0.001517 0.001517
+Ks 0.001418 0.001418 0.001418
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/alvaro/Frikeo/BusinessCard/Silkscreen/Silkscreen2-Back.png
+
+newmtl Material.001_NONE
+Ns 96.078431
+Ka 0.887097 0.887097 0.887097
+Kd 0.001517 0.001517 0.001517
+Ks 0.001418 0.001418 0.001418
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
